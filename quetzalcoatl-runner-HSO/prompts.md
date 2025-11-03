@@ -4,7 +4,7 @@
 
 **Proyecto:** Quetzalcóatl Runner  
 **Autora:** Heladia Salgado Osorio  
-**Asistente IA:** Claude Sonnet 4.5 (Cursor AI)  
+**Asistente IA:** Claude Sonnet 4.5 (Cursor AI)   && Chatgpt 5
 **Framework:** Phaser 3  
 **Tecnologías:** HTML5, CSS3, JavaScript  
 **Fecha de inicio:** Noviembre 2024  
@@ -23,9 +23,50 @@ Videojuego educativo y cultural inspirado en la mitología mexicana. El jugador 
 
 ---
 
+
 ## 🛠️ Cronología de Desarrollo
 
+### Diseño del juego
+
+**Asistente IA:** Chatgpt 5
+
+- Quiero hacer un videojuego, es la primera vez que lo voy hacer, dame una lista de 5 videojuegos que podria implementar?
+
+- Puedo escoger el Dino Runner, pero en lugar de que sea un dinno puedo usar otra imagen?
+
+- Mira soy mexicana, y quiero hacer algo representativo de México ... me das algunas ideas?
+
+- Me interesa Quetzalcoatl Runner .. analicemos esta temática..
+
+- Tambien el jaguar, el águila, y el quetzal son representativos de la época. Pueden incluirse?
+
+- quiero que me des un documento markdown que describa el juego y todo lo que incluye. En un archivo descargable.
+
+
+------
+
+### **FASE 1 – Prototipo base**
+
+**Asistente IA:** Chatgpt 5
+
+- Necesito implementar un videojuego ... te voy a pasar un archivo markdown y quiero que lo analices y me des todos los pasos a seguir para crear el juego .. primero quiero los pasos y luego me preguntas sobre el videojuego. Entendido?
+Quetzalcoatl_Runner_Description.md
+
+
+- 1.Me recomiendas usar Phaser 3? 
+2. Si, como Flappy Bird 
+3. No no tengo ninguna imagen .. me puedes apoyar con ellas. 
+4. Dejemoslo para la fase 3. Vamos por cada fase.
+
+- hasta el momento como se puede jugar ?
+
+-  Pues lo unico que veo al abrir el html es esto (un cuadro verde) 
+
+<!-- Me paso a cursor / Claude Sonnet 4.5 primero en modo ask y después de saber como correrlo y visualizarlo, me paso a modo agente -->
+
 ### **Sesión 1: Configuración Inicial y Optimización de Assets**
+
+**Asistente IA:** Claude Sonnet 4.5 (Cursor AI)
 
 #### Prompt 1: Inicio del proyecto
 ```
