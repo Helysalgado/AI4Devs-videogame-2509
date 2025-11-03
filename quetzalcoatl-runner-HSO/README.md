@@ -398,13 +398,29 @@ Este es un proyecto educativo completado. Si deseas crear tu propia versión o e
 
 ---
 
-## 🙏 Agradecimientos
+## 🙏 Créditos y agradecimientos
 
 - **LIDR Academy** por el programa AI4Devs
 - **Anthropic** por Claude Sonnet 4.5
 - **OpenAI** por ChatGPT-5
 - **Phaser Community** por el excelente framework
 - **Culturas Mesoamericanas** por su legado cultural
+
+
+### Música
+
+ 1. Música del Menu del juego. War drums. Amaksi.  https://pixabay.com/es/music/search/tambores/. 3,820 pistas de música tambores libres de regalías.
+ 2. Música del juego. Himno a Quetzalcoatl. Cinematic Delirium. YouTube. https://www.youtube.com/watch?v=1AnFE_z7MUM
+
+
+### Imágenes
+
+1. Quetzalcóatl. Wikipedia. https://es.wikipedia.org/wiki/Quetzalc%C3%B3atl
+
+
+## Créditos visuales:
+Los sprites y elementos visuales (Quetzalcóatl, Xiuhnel, Mictlantecuhtli, plumas sagradas) fueron generados con inteligencia artificial (ChatGPT – OpenAI Image Generation Tool).
+Autora y titular de derechos: Heladia Salgado Osorio.
 
 ---
 
