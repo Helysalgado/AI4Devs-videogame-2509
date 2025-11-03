@@ -164,17 +164,28 @@ class GameOverScene extends Phaser.Scene {
       repeat: -1
     });
 
-    // Input
-    this.input.keyboard.on('keydown-SPACE', () => {
-      this.scene.start('GameScene');
+    // Input - usar 'once' para evitar acumulación de listeners
+    this.input.keyboard.once('keydown-SPACE', () => {
+      this.cameras.main.fadeOut(500, 0, 0, 0);
+      this.time.delayedCall(500, () => {
+        this.scene.start('GameScene');
+      });
     });
 
-    this.input.keyboard.on('keydown-M', () => {
-      this.scene.start('MenuScene');
+    this.input.keyboard.once('keydown-M', () => {
+      this.cameras.main.fadeOut(500, 0, 0, 0);
+      this.time.delayedCall(500, () => {
+        this.scene.start('MenuScene');
+      });
     });
 
     // Fade in
     this.cameras.main.fadeIn(1000, 0, 0, 0);
+  }
+
+  shutdown() {
+    // Limpiar cualquier listener residual al salir de la escena
+    this.input.keyboard.removeAllListeners();
   }
 }
 
