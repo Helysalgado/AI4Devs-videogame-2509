@@ -89,13 +89,24 @@ class GameScene extends Phaser.Scene {
     this.load.image("pluma-quetzal", "assets/pluma-quetzal.png");
     
     // FASE 3: Audio (opcional, comentado si no existen archivos)
-    // this.load.audio('game-music', 'assets/audio/game-music.mp3');
+     this.load.audio('game-music', 'assets/audio/game-music.mp3');
     // this.load.audio('collect-feather', 'assets/audio/collect.mp3');
     // this.load.audio('power-up', 'assets/audio/powerup.mp3');
     // this.load.audio('hit', 'assets/audio/hit.mp3');
   }
 
   create() {
+    // FASE 3: Iniciar música del juego
+    try {
+      this.gameMusic = this.sound.add('game-music', {
+        loop: true,
+        volume: 0.5
+      });
+      this.gameMusic.play();
+    } catch (error) {
+      console.warn('No se pudo cargar la música del juego:', error);
+    }
+
     // Fondo en bucle
     this.background = this.add.tileSprite(400, 300, 800, 600, "fondo");
 
@@ -569,6 +580,11 @@ class GameScene extends Phaser.Scene {
 
   hitObstacle() {
     if (this.activePowers.jaguar.active) return;
+    
+    // FASE 3: Detener música del juego
+    if (this.gameMusic) {
+      this.gameMusic.stop();
+    }
     
     this.physics.pause();
     if (this.obstacleTimer) this.obstacleTimer.paused = true;
